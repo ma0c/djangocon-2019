@@ -14,3 +14,9 @@ docker run \
   contraslash/ops_with_actions_back
 
 ```
+
+## Tests
+1. For static analysis:
+    - flake8: `flake8` configuration inside `tox.ini`
+    - bandit: `bandit -r .` configuration inside `.bandit`
+    - radon: `radon cc . -i tickets_back_env`

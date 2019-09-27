@@ -1,0 +1,2 @@
+[bandit]
+exclude: /tickets_back_env/

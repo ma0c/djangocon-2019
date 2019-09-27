@@ -31,11 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 PROJECT_APPS = [
-    'five_minutes',
-    'events',
-    'promoters',
-    'tickets',
-    'users',
+    'tickets_back',
+    'applications.events',
+    'applications.promoters',
+    'applications.tickets',
+    'applications.users',
 ]
 
 DJANGO_COMMON_APPS = [
@@ -65,7 +65,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'five_minutes.urls'
+ROOT_URLCONF = 'tickets_back.urls'
 
 TEMPLATES = [
     {
@@ -83,19 +83,15 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'five_minutes.wsgi.application'
+WSGI_APPLICATION = 'tickets_back.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ['POSTGRES_DB'],
-        'USER': os.environ['POSTGRES_USER'],
-        'PASSWORD': os.environ['POSTGRES_PASSWORD'],
-        'HOST': os.environ['DB_SERVICE'],
-        'PORT': os.environ['DB_PORT']
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -203,7 +199,7 @@ LOGGING = {
     },
     'loggers': {
         'django.db.backends': {
-            'level': 'DEBUG',
+            'level': 'WARNING',
             'handlers': ['console'],
         }
     }

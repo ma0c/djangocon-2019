@@ -1,8 +1,8 @@
 import factory
 
-from events.tests.factories import EventFactory
-from tickets.models import Ticket
-from users.tests.factories import UserFactory
+from applications.events.tests.factories import EventFactory
+from applications.tickets.models import Ticket
+from applications.users.tests.factories import UserFactory
 
 
 class TicketFactory(factory.DjangoModelFactory):

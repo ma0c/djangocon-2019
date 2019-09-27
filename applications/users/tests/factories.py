@@ -1,7 +1,7 @@
 import datetime
 import factory
 
-from users.models import User
+from applications.users.models import User
 
 
 class UserFactory(factory.DjangoModelFactory):

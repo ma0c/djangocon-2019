@@ -3,8 +3,8 @@ from datetime import timedelta
 import factory
 from django.utils import timezone
 
-from events.models import Event
-from promoters.tests.factories import PromoterSpaceFactory
+from applications.events.models import Event
+from applications.promoters.tests.factories import PromoterSpaceFactory
 
 
 class EventFactory(factory.DjangoModelFactory):

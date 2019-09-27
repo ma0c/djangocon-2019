@@ -22,8 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
     url(r'^api-token-auth/', obtain_jwt_token),
-    url(r'^', include('events.urls')),
-    url(r'^', include('promoters.urls')),
-    url(r'^', include('tickets.urls')),
-    url(r'^', include('users.urls')),
+    url(r'^', include('applications.events.urls')),
+    url(r'^', include('applications.promoters.urls')),
+    url(r'^', include('applications.tickets.urls')),
+    url(r'^', include('applications.users.urls')),
 ]

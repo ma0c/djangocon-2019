@@ -2,5 +2,5 @@
 .idea/*
 .env
 data-five-minutes
-
+db.sqlite3
 tickets_back_env

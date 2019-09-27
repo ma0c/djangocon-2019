@@ -2,3 +2,5 @@
 .idea/*
 .env
 data-five-minutes
+
+tickets_back_env

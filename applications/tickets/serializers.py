@@ -2,10 +2,10 @@ from dry_rest_permissions.generics import DRYPermissionsField
 from rest_framework import serializers
 from rest_framework.serializers import ModelSerializer, Serializer
 
-from events.models import Event
-from events.serializers import EventSerializer
-from users.models import User
-from users.serializers import UserSerializer
+from applications.events.models import Event
+from applications.events.serializers import EventSerializer
+from applications.users.models import User
+from applications.users.serializers import UserSerializer
 from .models import Ticket
 
 

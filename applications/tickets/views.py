@@ -12,10 +12,10 @@ from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet, GenericViewSet
 from url_filter.integrations.drf import DjangoFilterBackend
 
-from events.models import Event
-from promoters.models import PromoterSpace
-from tickets.filters import TicketFilterSet
-from tickets.permissions import CanUseTicketPermission
+from applications.events.models import Event
+from applications.promoters.models import PromoterSpace
+from applications.tickets.filters import TicketFilterSet
+from applications.tickets.permissions import CanUseTicketPermission
 from .models import Ticket
 from .serializers import TicketSerializer, MyTicketsSerializer
 

@@ -1,6 +1,6 @@
 from django.db import models
 
-from promoters.models import Promoter, PromoterSpace
+from applications.promoters.models import Promoter, PromoterSpace
 
 
 class Event(models.Model):

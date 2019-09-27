@@ -1,8 +1,8 @@
 from rest_framework import serializers
 
-from five_minutes.serializers import DynamicModelSerializer
-from promoters.models import Promoter, PromoterSpace
-from promoters.serializers import PromoterSerializer, PromoterSpaceSerializer
+from tickets_back.serializers import DynamicModelSerializer
+from applications.promoters.models import Promoter, PromoterSpace
+from applications.promoters.serializers import PromoterSerializer, PromoterSpaceSerializer
 from .models import Event
 
 

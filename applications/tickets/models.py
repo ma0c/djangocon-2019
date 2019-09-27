@@ -1,8 +1,8 @@
 import uuid
 from django.db import models
 
-from events.models import Event
-from users.models import User
+from applications.events.models import Event
+from applications.users.models import User
 
 
 class Ticket(models.Model):
